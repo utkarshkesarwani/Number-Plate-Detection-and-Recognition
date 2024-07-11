@@ -6,13 +6,13 @@ The Vehicle Number Plate Detection and Recognition system is designed to automat
 
 Features-
 
-Real-Time Detection: Detects number plates from live video streams.
+->Real-Time Detection: Detects number plates from live video streams.
 
-Image Processing: Processes static images to detect and recognize number plates.
+->Image Processing: Processes static images to detect and recognize number plates.
 
-Optical Character Recognition (OCR): Extracts text from detected number plates.
+->Optical Character Recognition (OCR): Extracts text from detected number plates.
 
-High Accuracy: Uses advanced algorithms to ensure high accuracy in detection and recognition.
+->High Accuracy: Uses advanced algorithms to ensure high accuracy in detection and recognition.
 
 Technologies Used-
 
