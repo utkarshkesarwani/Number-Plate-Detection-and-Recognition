@@ -1,4 +1,4 @@
-# Number-Plate-Detection-and-Recognition
+# Vehicle Number Plate Detection and Recognition
 
 # Overview
 
