@@ -1,27 +1,65 @@
 # Vehicle Number Plate Detection and Recognition
 
-# Overview
+## Overview
+The **Vehicle Number Plate Detection and Recognition** project utilizes **Support Vector Machine (SVM)**, **Python**, **Scikit-learn**, and **MNIST** to detect and recognize vehicle license plates. This system can be used for traffic monitoring, automated toll collection, and security surveillance.
 
-The Vehicle Number Plate Detection and Recognition system is designed to automatically identify and read vehicle number plates from images or video streams. This application can be used in various scenarios such as parking management, toll collection, and law enforcement.
+## Features
+- **Image Preprocessing:** Noise reduction, grayscale conversion, and thresholding.
+- **License Plate Detection:** Identifies the license plate area in an image.
+- **Character Segmentation:** Extracts individual characters from the plate.
+- **Character Recognition:** Uses SVM trained on the MNIST dataset to recognize characters.
+- **Real-time Processing:** Can be integrated with live camera feeds for real-time detection.
+- **Data Logging:** Stores detected license plate numbers for future reference.
 
-# Features-
+## Tech Stack
+- **Python**: Primary programming language.
+- **OpenCV**: Image processing and plate detection.
+- **Scikit-learn**: Machine learning algorithms for character recognition.
+- **Support Vector Machine (SVM)**: Classification of characters.
+- **MNIST Dataset**: Pre-trained dataset for character recognition.
 
-->Real-Time Detection: Detects number plates from live video streams.
+## Installation Guide
+### Prerequisites
+Ensure you have the following installed:
+- Python 3.x
+- OpenCV
+- NumPy
+- Scikit-learn
 
-->Image Processing: Processes static images to detect and recognize number plates.
+### Setting Up the Project
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/yourusername/Vehicle-Plate-Recognition.git
+   cd Vehicle-Plate-Recognition
+   ```
+2. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Run the Application:**
+   ```bash
+   python main.py
+   ```
 
-->Optical Character Recognition (OCR): Extracts text from detected number plates.
 
-->High Accuracy: Uses advanced algorithms to ensure high accuracy in detection and recognition.
+## Model Training
+1. **Preprocess the Data:** Convert images to grayscale and apply thresholding.
+2. **Train the SVM Model:**
+   ```bash
+   python train_svm.py
+   ```
+3. **Test the Model:**
+   ```bash
+   python recognize_characters.py
+   ```
 
-# Technologies Used-
+## Usage
+1. Run the detection script on an image:
+   ```bash
+   python detect_plate.py --image sample.jpg
+   ```
+2. Process a video stream:
+   ```bash
+   python detect_plate.py --video sample.mp4
+   ```
 
-Frontend: HTML, CSS, JavaScript
-
-Backend: Python, Flask
-
-Computer Vision: OpenCV
-
-OCR: Tesseract OCR
-
-Version Control: Git
